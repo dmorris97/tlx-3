@@ -1,0 +1,8 @@
+const postTypes = {
+    ADD_NEW_POST_START: 'ADD_NEW_POST_START',
+    FETCH_POST_START: 'FETCH_POST_START',
+    SET_POST: 'SET_POST',
+    DELETE_POST_START: 'DELETE_POST_START'
+}
+
+export default postTypes

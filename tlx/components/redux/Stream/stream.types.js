@@ -1,0 +1,8 @@
+const streamTypes = {
+    ADD_NEW_STREAM_START: 'ADD_NEW_STREAM_START',
+    FETCH_STREAM_START: 'FETCH_STREAM_START',
+    SET_STREAM: 'SET_STREAM',
+    DELETE_STREAM_START: 'DELETE_STREAM_START'
+}
+
+export default streamTypes

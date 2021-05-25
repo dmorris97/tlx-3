@@ -1,0 +1,8 @@
+const videoTypes = {
+    ADD_NEW_VIDEO_START: 'ADD_NEW_VIDEO_START',
+    FETCH_VIDEOS_START: 'FETCH_VIDEOS_START',
+    SET_VIDEOS: 'SET_VIDEOS',
+    DELETE_VIDEO_START: 'DELETE_VIDEO_START'
+}
+
+export default videoTypes

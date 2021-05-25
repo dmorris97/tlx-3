@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from 'react'
 
 import {useSelector, useDispatch} from 'react-redux'
-import {signOutUserStart} from './../redux/User/user.actions'
-import {Link} from 'react-router-dom'
-import Logo from '/images/logo-grunge-orbital.png'
+import {signOutUserStart} from '../../components/redux/User/user.actions'
+import Link from 'next/link'
 
 const mapState = ({user}) => ({
     currentUser: user.currentUser
 })
-
-
 
 const Navbar = (props) => {
     const dispatch = useDispatch()
@@ -55,16 +52,18 @@ const Navbar = (props) => {
         <>
             <nav className={navbar ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container">
-                    <Link to="/" className="" onClick={closeMobileMenu}>
-                        <img src={Logo} alt='TLX' className='navbar-img'/>
+                    <Link href="/" className="" onClick={closeMobileMenu}>
+                        <img src='/images/logo-grunge-orbital.png' alt='TLX' className='navbar-img'/>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <ul className= {click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item">
-                            <Link to='/' className="nav-links" onClick={closeMobileMenu}>
-                                HOME
+                            <Link href='/' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    HOME
+                                </a>
                             </Link>
                         </li>
 
@@ -74,32 +73,42 @@ const Navbar = (props) => {
                             </Link>
                         </li> */}
                         <li className="nav-item">
-                            <Link to='/halfoween' className="nav-links" onClick={closeMobileMenu}>
-                                HALFOWEEN
+                            <Link href='/halfoween' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    HALFOWEEN
+                                </a>
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/past-work' className="nav-links" onClick={closeMobileMenu}>
-                                PAST WORK
+                            <Link href='/past-work' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    PAST WORK
+                                </a>
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/what-we-offer' className="nav-links" onClick={closeMobileMenu}>
-                                WHAT WE OFFER
+                            <Link href='/what-we-offer' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    WHAT WE OFFER
+                                </a>
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/day-in-the-life' className="nav-links" onClick={closeMobileMenu}>
-                                DAY IN THE LIFE
+                            <Link href='/day-in-the-life' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    DAY IN THE LIFE
+                                </a>
                             </Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/about' className="nav-links" onClick={closeMobileMenu}>
-                                ABOUT
+                            <Link href='/about' onClick={closeMobileMenu}>
+                                <a className="nav-links">
+                                    ABOUT
+                                </a>
                             </Link>
                         </li>
                         <li className='nav-item'>
