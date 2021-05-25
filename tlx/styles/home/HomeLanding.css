@@ -1,0 +1,106 @@
+.HeroL-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: -80px;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.HeroL-banner {
+    max-width: 1640px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.HeroL-col {
+    width: 50%;
+    float: left;
+}
+
+.HeroL-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.HeroL-button1 {
+    background-color: #98E3E5;
+    width: 150px;
+    border-radius: 15px;
+    color: black;
+    font-family: 'Bebas Neue';
+    font-size: x-large;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 80px;
+    z-index: 10;
+}
+
+.HeroL-button1:hover {
+    background-color: #588688;
+}
+
+.HeroL-button2 {
+
+    background-color: #98E3E5;
+    width: 150px;
+    /* 150px */
+    border-radius: 15px;
+    color: black;
+    font-family: 'Bebas Neue';
+    font-size: x-large;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 80px;
+    z-index: 10;
+}
+
+.HeroL-button2:hover {
+    background-color: #588688;
+}
+
+@media screen and (max-width: 1640px) {
+    /* .HeroL-button1 {
+        margin: -50px 40px 10px 40px;
+    }
+
+    .HeroL-button2 {
+        margin: -50px 40px 10px 40px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .HeroL-col {
+        width: 100%;
+    }
+
+    .HeroL-button1 {
+        margin: 10px 0 0 0;
+        
+    }
+
+    .HeroL-button2 {
+        margin: 10px 0 10px 0;
+    }
+}

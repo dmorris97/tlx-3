@@ -1,0 +1,93 @@
+.B-container{
+    background-color: #1D232E;
+    padding: 10vh 8vh 10vh 8vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -80px;
+}
+
+.B-card{
+    display: table;
+    background-color: #C1C1C1;
+    border-radius: 15px;
+    padding: 4vh 1vh 4vh 1vh;
+}
+
+.B-card-img {  
+    width: 100%;
+}
+
+.B-title{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.B-card-role {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.B-card-text{
+    font-family: 'Montserrat';
+    text-align: left;
+    
+    font-size: large;
+}
+
+.B-column {
+    float: left;
+}
+
+.B-left {
+    padding: 5vh;
+    width: 25%;
+}
+
+.B-right {
+    padding: 5vh;
+    width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .B-card-img {
+        height: 250px;
+        width: 250px;
+    }
+    .B-column{
+        float: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .B-left {
+        align-items: center;
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .B-right {
+        float: none;
+        width: 100%;
+    } 
+}
+
+@media  screen and (max-width: 600px) {
+    .B-container{
+        padding: 2vh 1vh 2vh 1vh;
+    }
+    .B-card{
+        padding: 2vh 1vh 2vh 1vh;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .B-container{
+        padding: 2vh 0vh 2vh 0vh;
+    }
+    .B-card{
+        padding: 2vh 0vh 2vh 0vh;
+    } 
+  
+}
