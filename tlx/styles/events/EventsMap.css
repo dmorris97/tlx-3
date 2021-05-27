@@ -1,0 +1,130 @@
+.EM-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: -80px;
+    bottom: 0;
+    padding-bottom: 5%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.EM-map {
+    width: 900px;
+    height: 1200px;
+    display: flex;
+    z-index: 1;
+}
+
+.EM-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.EM-col {
+    float: left;
+    width: 33%;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.EM-title {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #d6d6d6;
+    font-family: 'Bebas Neue';
+    font-size: 4rem;
+}
+
+.EM-color1 {
+    background-color: #98E3E5;
+    width: 60%;
+    border-radius: 15px;
+    color: black;
+    font-family: 'Bebas Neue';
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 80px;
+}
+.EM-color1:hover {
+    background-color: #588688;
+
+}
+
+.EM-color2 {
+    background-color: #4E2D78;
+    width: 60%;
+    border-radius: 15px;
+    color: #d6d6d6;
+    font-family: 'Bebas Neue';
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 80px;
+}
+.EM-color2:hover {
+    background-color: #3D235E;
+
+}
+
+.EM-color3 {
+    background-color: #038C33;
+    width: 60%;
+    border-radius: 15px;
+    color: #d6d6d6;
+    font-family: 'Bebas Neue';
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 80px;
+}
+.EM-color3:hover {
+    background-color: #008037;
+}
+
+@media screen and (max-width: 900px) {
+    .EM-map {
+        width: 768px;
+        height: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .EM-map {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .EM-col {
+        width: 100%;
+    }
+}

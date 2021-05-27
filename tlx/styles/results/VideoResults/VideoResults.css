@@ -1,0 +1,92 @@
+.VR-videos{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    color: #D6D6D6;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+.VR-video-border {
+    border: 1px solid #D6D6D6;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.VR-video{
+    width: 50%;
+    height: 20rem;
+    margin: 0;
+    padding: 0 10px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.VR-video-target{
+    width: 480px;
+    height: 270px;
+}
+
+.VR-v-name{
+    text-align: center;   
+}
+
+@media screen and (max-width: 1030px) {
+    .VR-videos {
+        /* display: flex; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .VR-videos {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .VR-video{
+        padding: 0;
+    }
+    .VR-video-border {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .VR-video {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .VR-video-border {
+        padding: 5px;
+    }
+    .VR-video-target{
+        width: 350px;
+        height: 197px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .VR-video-target{
+        width: 256px;
+        height: 144px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .VR-video {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .VR-video-border {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,35 @@
+.pp-container {
+    background-color: #1D232E;
+    /* left: -10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -80px;
+    height: auto;
+}
+
+.pp-row {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.pp-column {
+    float:left;
+  width: 33.33%;
+  
+}
+
+.pp-img{
+    width: 100%;
+    /* justify-content: center; */
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+    .pp-column {
+        width: 100%;
+        float: left;
+    }
+}

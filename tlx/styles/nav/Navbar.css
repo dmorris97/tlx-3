@@ -25,6 +25,7 @@
       height: 70px;
       /* margin-left: 10px; */
       justify-content: left;
+      cursor: pointer;
   }
   
   .nav-menu {

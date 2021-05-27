@@ -1,0 +1,72 @@
+.RRH-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: -80px;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.RRH-banner {
+    margin-top: 70px;
+    width: 1536px;
+    height: 576px;
+    display: flex;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1550px) {
+    .RRH-banner {
+        width: 1344px;
+        height: 504px;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .RRH-banner {
+        width: 1152px;
+        height: 432px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .RRH-banner {
+        width: 960px;
+        height: 360px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .RRH-banner {
+        /* margin-top: 0px; */
+        width: 768px;
+        height: 288px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .RRH-container {
+        /* height: 60vh;  */
+    }
+    .RRH-banner {
+        width: 576px;
+        height: 216px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .RRH-container {
+        /* height: 50vh;  */
+    }
+    .RRH-banner {
+        width: 384px;
+        height: 144px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .RRH-banner {
+        width: 288px;
+        height: 108px;
+    }
+}

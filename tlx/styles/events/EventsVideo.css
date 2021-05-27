@@ -1,0 +1,159 @@
+.EV-container{
+    background-image: url('/images/VideoSiteBackground.png');
+
+    position: relative;
+  height: 70vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat:repeat-y;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vh 18vw;
+  object-fit: contain;
+  top: -80px;
+  /* transform: scale(1); */
+  overflow: hidden;
+}
+
+.EV-background {
+    background-image: url('/images/VideoSiteBackground.png');
+
+    position: absolute;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* size: cover; */
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    z-index: 0;
+}
+
+.EV-video {
+    width: 854px;
+    height: 480px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.EV-layer {
+    background-color: rgba(5, 13, 11, 0.6);
+    position: absolute;
+    size: cover;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    z-index: 0;
+}
+
+.EV-header {
+    font-size: 4rem;
+    color: #D6D6D6;
+    font-family: 'Montserrat';
+    margin-bottom: 3vh;
+    text-align: center;
+
+    z-index: 1;
+
+}
+
+.EV-content{
+    font-size: 2vh;
+    line-height: 1.5;
+    color: #D6D6D6;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.EV-content-border{
+    padding: 6vh;
+    border: #D6D6D6 solid 1px;
+    border-radius: 15px;
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .EV-video {
+        width: 640px;
+        height: 360px;
+    }
+    .EV-container{
+        padding: 2vh 10vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .EV-container{
+      height: 85vh;
+    }
+
+    .EV-layer {
+        height: 70vh;
+    }
+
+    .EV-header {
+        font-size: 4rem;
+    }
+
+    .EV-content{
+        font-size: 3vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .EV-container{
+      height: 85h;
+    }
+
+    .EV-layer {
+        height: 70vh;
+    }
+
+    .EV-header {
+        font-size: 10vw;
+    }
+
+    .EV-content{
+        font-size: 3vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .EV-video {
+        width: 100%;
+        height: 130%;
+        margin: 0;
+    }
+    .EV-container{
+        height: 50vh;
+        padding: 0vh 5vw;
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+    .EV-container{
+      height: 145vh;
+    }
+
+    .EV-video {
+        width: 426px;
+        height: 240px;
+    }
+}

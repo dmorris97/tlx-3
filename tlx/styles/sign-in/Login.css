@@ -1,0 +1,17 @@
+.Login-socialSignIn{
+    margin-top: 10px;
+}
+
+.Login-links {
+    display: block;
+    width: 100%;
+    margin: 15px auto 0;
+}
+
+.Login-reset-text {
+    color: white;
+}
+
+.Login-size{
+    padding: 5vh;
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 
 // import HeroSection from './HeroSection'
-import HomeAbout from './home/HomeAbout'
+import HomeAbout from '../components/pages/home/HomeAbout'
 // import HomeContact from './HomeContact'
-import HomeForm from './home/HomeForm';
-import HomeLanding from './home/HomeLanding';
-import HomePics from './home/HomePics'
+import HomeForm from '../components/pages/home/HomeForm';
+import HomeLanding from '../components/pages/home/HomeLanding';
+import HomePics from '../components/pages/home/HomePics'
 // import HomeVideo from './HomeVideo';
 
 const Home = () => {

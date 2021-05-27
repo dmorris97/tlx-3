@@ -1,0 +1,43 @@
+.scrollTopPos {
+  display: flex;
+  float: left;
+}
+
+.scrollTop {
+  
+  position: sticky; 
+  color: #D6D6D6;
+  width: 50px;
+  bottom: 20px;
+  align-items: right;
+  height: 20px;
+  justify-content: right;
+  
+  margin-left: 92%;
+  margin-right: 0;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.6;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrollTop {
+  /* display: none; */
+    margin-left: 85%;
+  }
+}

@@ -1,0 +1,29 @@
+.DITLP-container{
+    background-color: #1D232E;
+    position: relative;
+    top: -80px;
+    padding: 10vh 10vh 10vh 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon {
+    color: #D6D6D6;
+    font-family: 'Montserrat';
+    font-size: 8vh;
+}
+
+@media screen and (max-width: 768px) {
+    .DITLP-container{
+        padding: 4vh 8vh;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .DITLP-container{
+        padding: 2vh 4vh;
+        
+    }
+}

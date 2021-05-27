@@ -1,0 +1,77 @@
+/* Style the accordion section */
+.PA-post_accordion__section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.PA-post_accordion {
+    background-color: transparent; 
+    border-radius: 1vw;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    margin: 10px 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.PA-post_accordion:hover,
+.active {
+    background-color: rgb(121, 121, 121);
+}
+
+/* Style the accordion content title */
+.PA-post_accordion__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+/* Style the accordion chevron icon */
+.PA-post_accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+/* Style to rotate icon when state is active */
+.PA-rotate {
+    transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default #1D232E*/
+.PA-post_accordion__content {
+    background-color: #D6D6D6;
+    
+    color: black;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+/* Style the accordion content text */
+.PA-post_accordion__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: large;
+    padding: 18px;
+}
+
+@media screen and (max-width: 960px) {
+    .PA-Post_accordion__title {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .PA-postRet {
+        grid-template-columns: 1fr;
+    }
+
+    .PA-post_accordion {
+    }
+}

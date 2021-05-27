@@ -1,0 +1,150 @@
+.EH-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: -80px;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.EH-banner {
+    width: 1476px;
+    height: 828px;
+    margin-top: 70px;
+    display: flex;
+    z-index: 1;
+}
+
+.EH-color {
+    display: none;
+}
+@media screen and (max-width: 1490px) {
+    
+    .EH-container{
+        
+    }
+    .EH-banner {
+        width: 1230px;
+        height: 690px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    
+    .EH-container{
+        
+    }
+    .EH-banner {
+        width: 1066px;
+        height: 598px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    
+    .EH-container{
+        
+    }
+    .EH-banner {
+        width: 820px;
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    
+    .EH-container{
+        /* height: 70vh; */
+    }
+    .EH-banner {
+        width: 656px;
+        height: 368px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    
+    .EH-container{
+        /* height: 100vh; */
+        
+    }
+    .EH-banner {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .EH-container{
+        /* height: 70vh; */
+    }
+    .EH-banner {
+        /* height: 50vh; */
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .EH-banner {
+        width: 410px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .EH-container{
+        height: 60vh;
+    }
+    .EH-banner {
+        /* height: 30vh; */
+    }
+    .EH-color {
+        background-color: #4E2D78;
+        width: 70%;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: x-large;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        transition: background-color 0.6s ease;
+        margin: 10px 35px;
+    }
+    .EH-color:hover {
+        background-color: #3D235E;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .EH-banner {
+        width: 369px;
+        height: 207px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .EH-banner {
+        width: 328px;
+        height: 184px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .EH-banner {
+        width: 287px;
+        height: 161px;
+    }
+}

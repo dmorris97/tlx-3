@@ -1,0 +1,22 @@
+.WWO-btn {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #D6D6D6;
+    background: #715185;
+    padding: 10px 0;
+    margin: auto;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.WWO-btn:hover {
+    background: #D6D6D6;
+    color: #242424;
+    transition: all 0.3s ease-out;
+
+}
