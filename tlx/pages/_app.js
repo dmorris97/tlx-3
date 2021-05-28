@@ -2,8 +2,6 @@ import Head from 'next/head'
 import {Provider} from 'react-redux'
 import store from '../components/redux/createStore'
 
-import Navbar from '../components/nav/Navbar'
-
 import '../styles/globals.css'
 
 //Navbar Styles
@@ -11,6 +9,7 @@ import '../styles/nav/Navbar.css'
 
 //Home Page Styles
 import '../styles/home/HomeLanding.css'
+import '../styles/home/HeroSection.css'
 import '../styles/home/HomePics.css'
 import '../styles/home/HomeAbout.css'
 import '../styles/home/HomeForm.css'
@@ -53,12 +52,19 @@ import '../styles/about/profiles/David.css'
 import '../styles/about/profiles/Taylor.css'
 
 //SignIn Styles
+import '../styles/sign-in/EmailPassword/EmailPassword.css'
 import '../styles/sign-in/form/FormIn.css'
 import '../styles/sign-in/form/FormSelect.css'
 import '../styles/sign-in/Login.css'
 import '../styles/sign-in/SIButton.css'
 import '../styles/sign-in/SignIn.css'
 import '../styles/sign-in/SignUp.css'
+
+//Admin Styles
+import '../styles/admin/Admin.css'
+import '../styles/admin/AdminDITL.css'
+import '../styles/admin/AdminLE.css'
+import '../styles/admin/AdminPW.css'
 
 //Result Styles
 import '../styles/results/VideoResults/VideoResults.css'
@@ -67,14 +73,29 @@ import '../styles/results/PostResults/PostAccordion.css'
 import '../styles/results/PostResults/PostResults.css'
 
 //Auth Styles
+import '../styles/auth/admin-toolbar/AdminToolbar.css'
+import '../styles/auth/layouts/AdminLayout.css'
+import '../styles/auth/layouts/VerticalNav.css'
+import '../styles/auth/modal/Modal.css'
 import '../styles/auth/wrapper/AuthWrapper.css'
+import '../styles/auth/user-profile/UserProfile.css'
 
 //Scroll Styles
 import '../styles/scroll/ScrollArrow.css'
 
+//Footer Styles
+import '../styles/footer/Footer.css'
+
+//Navbar Componants
+import Navbar from '../components/nav/Navbar'
+
 //Scroll Componants
 import ScrollToTop from '../components/scroll/ScrollToTop'
 import ScrollArrow from '../components/scroll/ScrollArrow'
+
+//Footer Componants
+import Footer from '../components/footer/Footer'
+import AdminToolbar from '../components/pages/admin/admin-toolbar/AdminToolbar'
 
 const MyApp = ({ Component, pageProps }) => {
   return( 
@@ -83,11 +104,14 @@ const MyApp = ({ Component, pageProps }) => {
       <title>TwistedLogix</title>
       <meta name="description" content="TwistedLogix Production" />
       <link rel="icon" href="/images/logo-grunge-orbital.png" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
     </Head>
     <Provider store={store}>
       <ScrollToTop>
+        <AdminToolbar />
         <Navbar/>
         <Component {...pageProps} />
+        <Footer/>
         <ScrollArrow />
       </ScrollToTop>
     </Provider>

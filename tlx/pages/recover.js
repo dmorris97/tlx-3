@@ -1,5 +1,5 @@
 import React from 'react'
-import EmailPassword from '../../../EmailPassword/EmailPassword'
+import EmailPassword from '../components/sign-in/EmailPassword/EmailPassword'
 
 const Recover = props => {
     return (

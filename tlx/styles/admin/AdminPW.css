@@ -1,0 +1,62 @@
+
+  
+.callToActions {
+    display: inline-block;
+    
+    padding: 0 0;
+    margin: 0 auto 0 auto;
+}
+  
+.admin-ul {
+    /*width: 50%;*/
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style-type: none;
+}
+  
+.admin-li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+  
+  
+.admin-h2 {
+    margin-top: 1.5rem;
+}
+
+.manageVideos {
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    
+}
+
+tr:nth-child(odd){
+    background-color: black;
+}
+tr:nth-child(even){
+    background-color: #1D232E;
+}
+
+.thumb{
+    width: 15.0rem;
+    margin: 0 auto;
+}
+.h1-table{
+    color: white;
+    text-align: center;
+    background-color: #1D232E;
+    margin-top: 1rem;
+}
+.table{
+    padding: 0 5px; 
+}
+
+.h1-title{
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}

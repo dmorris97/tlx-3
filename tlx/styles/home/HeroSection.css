@@ -1,0 +1,141 @@
+.hero-container {
+    background: url('/images/background1.jpg'); 
+    position: relative;
+    background-attachment: scroll;
+    background-position-y: 0;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    top: -80px;
+    bottom: 0;
+    background-color: rgba(5,13,11,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    overflow: hidden;
+  }
+  
+
+  .hs-layer {
+    background-color: rgba(5, 13, 11, 0.4);
+    position: absolute;
+    size: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+
+
+  .home-logo{
+      width: 50vh;
+      max-width: 500px;
+      margin-top: 0vh;
+      display: flex;
+      
+      z-index: 1;
+  }
+
+  .home-name {
+    color: transparent;
+    animation: effect 1s linear infinite;
+  }
+
+  @keyframes effect {
+    0% {
+        background: linear-gradient(
+            #008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    50% {
+      background: linear-gradient(
+        #4B2E5A, purple);
+      -webkit-background-clip: text;
+  }
+
+    100% {
+        background: linear-gradient(
+            #3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+  .hs-title {
+    /* color: #D6D6D6; */
+    color: transparent;
+    background: linear-gradient(#E1CCEE, #4B2E5A); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Montserrat';
+    font-size: 4rem;
+    margin-top: 0vh;
+    z-index: 1;
+  }
+
+
+
+  @media screen and (max-width: 1024px) {
+    .home-logo{
+        width: 50vh;
+        max-width: none;
+        margin-left: 0px;
+        margin-top: 0vh;
+        
+    }
+
+    .hero-container > h1 {
+      font-size: 3rem;
+      margin-top: 3vh;
+    }
+
+    .hero-container {
+      background-position-y: 0px;
+      /* background-size: 150vh; */
+      background-repeat: repeat;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-logo{
+        width: 50vh;
+        max-width: none;
+        margin-left: 0px;
+        margin-top: 0vh;
+        
+    }
+
+    .hero-container > h1 {
+      font-size: 3rem;
+      margin-top: 3vh;
+    }
+
+    .hero-container {
+      background-position-y: 0px;
+      background-size: 150vh;
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .home-logo{
+        width: 40vh;
+        margin-left: 0px;
+        margin-top: -10vh;
+        
+    }
+
+    .hero-container {
+      background-position-y: 0px;
+      background-size: 150vh;
+      
+    }
+    
+  }

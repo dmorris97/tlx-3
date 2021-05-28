@@ -1,0 +1,38 @@
+.at-container {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    height: auto;
+    margin: 0px auto -1vh auto;
+    padding: 0px 10px;
+
+}
+
+.at-ulist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.at-ilist {
+    display: inline-block;
+}
+
+.at-text {
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    padding: 10px;
+    transition: all .4s ease-in-out;
+}
+.at-ilist:hover {
+    background-color: white;
+    
+    transition: all .4s ease-in-out;
+}
+
+.at-text:hover {
+    color: black;
+}
