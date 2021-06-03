@@ -1,5 +1,6 @@
+import React, {useEffect} from 'react';
 import Head from 'next/head'
-import {Provider} from 'react-redux'
+import {Provider, useDispatch} from 'react-redux'
 import store from '../components/redux/createStore'
 
 import '../styles/globals.css'
@@ -86,6 +87,9 @@ import '../styles/scroll/ScrollArrow.css'
 //Footer Styles
 import '../styles/footer/Footer.css'
 
+//Redux Imports
+import {checkUserSession} from '../components/redux/User/user.actions'
+
 //Navbar Componants
 import Navbar from '../components/nav/Navbar'
 
@@ -97,7 +101,31 @@ import ScrollArrow from '../components/scroll/ScrollArrow'
 import Footer from '../components/footer/Footer'
 import AdminToolbar from '../components/pages/admin/admin-toolbar/AdminToolbar'
 
+
+const AppWrap = ({ Component, pageProps }) => {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(checkUserSession())    
+
+  }, [])
+
+  return (
+    <div>
+      <ScrollToTop>
+        <AdminToolbar />
+        <Navbar/>
+        <Component {...pageProps} />
+        {/* <Footer/> */}
+        <ScrollArrow />
+      </ScrollToTop>
+    </div>
+  )
+}
+
 const MyApp = ({ Component, pageProps }) => {
+  const passing = {Component, pageProps}
+
   return( 
   <div>
     <Head>
@@ -107,13 +135,7 @@ const MyApp = ({ Component, pageProps }) => {
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
     </Head>
     <Provider store={store}>
-      <ScrollToTop>
-        <AdminToolbar />
-        <Navbar/>
-        <Component {...pageProps} />
-        <Footer/>
-        <ScrollArrow />
-      </ScrollToTop>
+      <AppWrap {...passing} />
     </Provider>
   </div>
   )

@@ -4,6 +4,7 @@ import AdminLE from '../components/pages/admin/AdminLE'
 import AdminPW from '../components/pages/admin/AdminPW'
 import AdminDITL from '../components/pages/admin/AdminDITL'
 import WithAdminAuth from '../components/auth/hoc/withAdminAuth'
+import AdminLayout from '../components/auth/layouts/AdminLayout'
 
 const Admin = () => {
     const [showResultsLE, setShowResultsLE] = useState(false)
