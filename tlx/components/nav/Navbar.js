@@ -75,13 +75,13 @@ const Navbar = (props) => {
                                 LIVE EVENT
                             </Link>
                         </li> */}
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link href='/events' onClick={closeMobileMenu}>
                                 <a className="nav-links">
                                     EVENTS
                                 </a>
                             </Link>
-                        </li>
+                        </li> */}
 
                         <li className="nav-item">
                             <Link href='/past-work' onClick={closeMobileMenu}>

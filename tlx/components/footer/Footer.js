@@ -70,7 +70,7 @@ const Footer = props => {
           {currentUser && (
             <ul>
                 <li className="footer-link-items">
-                    <Link className='footer-font' onClick={() => signOut()}>Sign-Out</Link>
+                    <button className='footer-font' onClick={() => signOut()}>Sign-Out</button>
                 </li>
             </ul>
           )}

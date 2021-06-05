@@ -8,14 +8,14 @@ const HomePics = () => {
             <Fade bottom>
             <div className='hp-column1'>
                 <h3 className='hp-heading'>
-                    <Link href='/halfoween' >
+                    <Link href='/' >
                         <a className='hp-a'>
-                            Halfoween
+                            Coming Soon
                         </a>
                     </Link>
                 </h3>
-                <Link href='/halfoween' className='hp-a'>
-                <img src='/images/MainPagePoster.png' alt='Event' className="hp-img"/>
+                <Link href='/' className='hp-a'>
+                <img src='/images/hp-live-event.jpg' alt='Event' className="hp-img"/>
                 </Link>
             </div>
             <div className='hp-column2'>

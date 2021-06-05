@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Head from 'next/head'
+import Document, {Html, Head} from 'next/document'
 import {Provider, useDispatch} from 'react-redux'
 import store from '../components/redux/createStore'
 
@@ -116,7 +116,7 @@ const AppWrap = ({ Component, pageProps }) => {
         <AdminToolbar />
         <Navbar/>
         <Component {...pageProps} />
-        {/* <Footer/> */}
+        <Footer/>
         <ScrollArrow />
       </ScrollToTop>
     </div>
