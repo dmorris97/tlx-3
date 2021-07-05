@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Document, {Html, Head} from 'next/document'
+import Head from 'next/head'
 import {Provider, useDispatch} from 'react-redux'
 import store from '../components/redux/createStore'
 
@@ -133,6 +133,19 @@ const MyApp = ({ Component, pageProps }) => {
       <meta name="description" content="TwistedLogix Production" />
       <link rel="icon" href="/images/logo-grunge-orbital.png" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST9QNJD7WF"></script>
+      <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+        
+              gtag('config', 'G-ST9QNJD7WF');
+          `,
+            }}
+      />
+
     </Head>
     <Provider store={store}>
       <AppWrap {...passing} />
